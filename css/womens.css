@@ -1,0 +1,507 @@
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 1, 1, 0.4)), to(rgba(5, 5, 8, 0.5))), url(../img/bgwomen.jpg);
+  background-image: linear-gradient(rgba(5, 1, 1, 0.4), rgba(5, 5, 8, 0.5)), url(../img/bgwomen.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header .nav-link {
+  color: #15d8ce;
+}
+
+header .nav-link:hover {
+  color: #a33261;
+}
+
+header .active {
+  color: #e4005f;
+  border: 1px dashed #e4005f;
+}
+
+header .logo-sub {
+  color: #e4005f !important;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+header #outfit-category {
+  padding-top: 10rem;
+}
+
+header .outfit-category .container {
+  max-width: 100rem;
+}
+
+header .outfit-category img {
+  width: 100%;
+  border-radius: 20px;
+  height: 375px;
+}
+
+header .outfit-category .category-item {
+  position: relative;
+  overflow: hidden;
+}
+
+header .outfit-category .category-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #15d8ce;
+  opacity: 0.3;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: scale(-2) translateY(-100%);
+          transform: scale(-2) translateY(-100%);
+}
+
+header .outfit-category .category-item:hover::after {
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+header .outfit-category .category-item-img {
+  overflow: hidden;
+}
+
+header .outfit-category .category-item-img img {
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+header .outfit-category .category-item:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  border-radius: 20px;
+}
+
+header .outfit-category .category-item .category-text-1::after,
+header .outfit-category .category-item .category-text-2::after,
+header .outfit-category .category-item .category-text-3::after {
+  content: 'Casual Outfit';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 2.4rem;
+  font-family: 'Playfair Display SC', serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: honeydew;
+  letter-spacing: 2px;
+  -webkit-transform: translateY(85%);
+          transform: translateY(85%);
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+header .outfit-category .category-item .category-text-2::after {
+  content: 'Party Wear';
+}
+
+header .outfit-category .category-item .category-text-3::after {
+  content: 'ornaments';
+}
+
+header .outfit-category .category-item:hover .category-text-1::after,
+header .outfit-category .category-item:hover .category-text-2::after,
+header .outfit-category .category-item:hover .category-text-3::after {
+  opacity: 0;
+}
+
+header .outfit-category .category-item .text-primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Playfair Display SC', serif;
+  letter-spacing: 5px;
+  margin-top: 1rem;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+header .outfit-category .category-item:hover .text-primary {
+  opacity: 1;
+  -webkit-animation-name: textPrimary;
+          animation-name: textPrimary;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes textPrimary {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    letter-spacing: 10px;
+    font-size: 1rem;
+  }
+  50% {
+    -webkit-transform: translateY(240deg);
+            transform: translateY(240deg);
+    letter-spacing: 1rem;
+    font-size: 1.5rem;
+  }
+  75% {
+    -webkit-transform: rotateX(280deg);
+            transform: rotateX(280deg);
+    letter-spacing: 1.5rem;
+    font-size: 2rem;
+  }
+  85% {
+    -webkit-transform: rotateX(300deg);
+            transform: rotateX(300deg);
+    letter-spacing: 2rem;
+    font-size: 2.5rem;
+  }
+  100% {
+    -webkit-transform: translateY(360deg);
+            transform: translateY(360deg);
+    letter-spacing: 3rem;
+  }
+}
+
+@keyframes textPrimary {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    letter-spacing: 10px;
+    font-size: 1rem;
+  }
+  50% {
+    -webkit-transform: translateY(240deg);
+            transform: translateY(240deg);
+    letter-spacing: 1rem;
+    font-size: 1.5rem;
+  }
+  75% {
+    -webkit-transform: rotateX(280deg);
+            transform: rotateX(280deg);
+    letter-spacing: 1.5rem;
+    font-size: 2rem;
+  }
+  85% {
+    -webkit-transform: rotateX(300deg);
+            transform: rotateX(300deg);
+    letter-spacing: 2rem;
+    font-size: 2.5rem;
+  }
+  100% {
+    -webkit-transform: translateY(360deg);
+            transform: translateY(360deg);
+    letter-spacing: 3rem;
+  }
+}
+
+#party {
+  background-image: url(../img/wo3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#party .party {
+  position: relative;
+  padding: 3.2rem;
+}
+
+#party .party h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-family: 'Playfair Display SC', serif;
+  padding: 3.2rem;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+}
+
+#party .party .party-grid-item img {
+  width: 100%;
+  height: 595px;
+  border-radius: 10px;
+}
+
+#party .party .party-grid-item .grid-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 5rem;
+}
+
+#party .party .party-grid-item .grid-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #15d8ce;
+  opacity: 0.2;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-transform: scale(1) translateY(100%);
+          transform: scale(1) translateY(100%);
+}
+
+#party .party .party-grid-item .grid-item:hover::after {
+  -webkit-transform: scale(2) translateX(0%);
+          transform: scale(2) translateX(0%);
+}
+
+#party .party .party-grid-item .grid-item .grid-text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: #e4005f;
+  text-shadow: 5px 5px 20px;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Playfair Display SC', serif;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#party .party .party-grid-item .grid-item .grid-text i {
+  padding: 0.8rem;
+}
+
+#party .party .party-grid-item .grid-item:hover .grid-text {
+  opacity: 1;
+  -webkit-animation-name: text;
+          animation-name: text;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes text {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: scaleX(5);
+            transform: scaleX(5);
+  }
+  50% {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  75% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes text {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: scaleX(5);
+            transform: scaleX(5);
+  }
+  50% {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  75% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#ornaments {
+  background-image: url(../img/wo1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#ornaments .ornaments {
+  position: relative;
+  padding: 3.2rem;
+}
+
+#ornaments .ornaments h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-family: 'Playfair Display SC', serif;
+  padding: 3.2rem;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+}
+
+#ornaments .ornaments .ornaments-grid-item img {
+  width: 438px;
+  height: 360px;
+  border-radius: 10px;
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 5rem;
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #15d8ce;
+  opacity: 0.2;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+          transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item:hover::after {
+  -webkit-transform: translateX(0) translateY(0%);
+          transform: translateX(0) translateY(0%);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item .grid-text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: #e4005f;
+  text-shadow: 5px 5px 20px;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Playfair Display SC', serif;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+          transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item .grid-text i {
+  padding: 0.8rem;
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item .grid-text .grid-text-primary {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+          transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item .grid-text .grid-text-secondary {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+          transform: translateY(50%) translateX(100%) rotateY(180deg) rotateX(240deg);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item:hover .grid-text {
+  opacity: 1;
+  -webkit-transform: translateX(0) translateY(0%);
+          transform: translateX(0) translateY(0%);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item:hover .grid-text-primary {
+  -webkit-transform: translateX(0) translateY(0%);
+          transform: translateX(0) translateY(0%);
+}
+
+#ornaments .ornaments .ornaments-grid-item .grid-item:hover .grid-text-secondary {
+  -webkit-transform: translateX(0) translateY(0%);
+          transform: translateX(0) translateY(0%);
+}
+
+@media (max-width: 575px) {
+  .outfit-category .img-edit {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 750px) {
+  .grid-text {
+    font-size: 2rem !important;
+  }
+}
+/*# sourceMappingURL=womens.css.map */

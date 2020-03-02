@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/6dfd115200.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Ma+Shan+Zheng|Playfair+Display+SC|Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>OutFit</title>
+</head>
+
+<body>
+
+    <header id="main-header">
+
+        <nav class="navbar navbar-expand-md fixed-top bg-nav">
+            <div class="container">
+
+                <div class="navbar-brand logo mt-5">
+                    <h3 class="logo-main">Fashion </h3>
+                    <p class="logo-sub"> Outfit Ideas </p>
+                </div>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="hamburger"><i class="fas fa-bars fa-2x"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#main-header" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Category</a>
+                            <div class="dropdown-menu">
+                                <a href="mens.html" class="dropdown-item" target="_blank">Mens Outfit</a>
+                                <a href="womens.html" class="dropdown-item" target="_blank">Womens Outfit</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="showcase">
+
+        <div id="myCarousel" class="carousel slide" data-ride='carousel'>
+            <!-- Carousel Indicators -->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="carousel-caption d-none d-sm-block">
+
+                    </div>
+
+                </div>
+                <div class="carousel-item carousel-image-2"></div>
+                <div class="carousel-item carousel-image-3"></div>
+            </div>
+
+
+            <!-- Carousel Arrow -->
+            <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+        <div class="showcase-content container ">
+            <h2 class="from-left display-4 text-white">FASHION WORLD</h2>
+            <p class="from-right d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iste,
+                fugiat!
+            </p>
+            <div class="btn-animated mt-3">
+                <a href="#services" class="btn btn-active d-none d-sm-inline-block">Read More</a>
+                <a href="#gallery" class="btn">View Gallery</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section Category -->
+
+    <section id="category">
+
+        <div class="row no-gutters">
+            <div class="col-md-6 men">
+
+                <h3 class="primary-main">For Mens</h3>
+                <p class="primary-sub d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium
+                    cupiditate!</p>
+                <a href="mens.html" class="btn-category btn-animated">Explore Now</a>
+
+            </div>
+            <div class="col-md-6 women">
+
+                <h3 class="primary-main">For Womens</h3>
+                <p class="primary-sub d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium
+                    cupiditate!</p>
+                <a href="womens.html" class="btn-category btn-animated">Explore Now</a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section - Services -->
+
+    <section id="services">
+
+        <div class="row no-gutters">
+
+            <div class="col-md-6">
+                <div class="service-content">
+                    <div class="content">
+                        <h1>Our services</h1>
+                        <div class="d-none d-sm-block">
+                            <div class="flex-item">
+                                <div class="flex-icon">
+                                    <i class="far fa-gem fa-2x"></i>
+                                </div>
+                                <div class="flex-content">
+                                    <h3>fashion Designing</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt exercitationem
+                                        eveniet
+                                        a
+                                        ducimus quod impedit.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex-item">
+                                <div class="flex-icon">
+                                    <i class="far fa-calendar-alt fa-2x"></i>
+                                </div>
+                                <div class="flex-content">
+                                    <h3>Electronic Dance Music </h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt exercitationem
+                                        eveniet
+                                        a
+                                        ducimus quod impedit.</p>
+                                </div>
+                            </div>
+
+                            <div class=" flex-item">
+                                <div class="flex-icon">
+                                    <i class="fas fa-camera-retro fa-2x"></i>
+                                </div>
+                                <div class="flex-content">
+                                    <h3>commercial photoshoot</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt exercitationem
+                                        eveniet
+                                        a
+                                        ducimus quod impedit.</p>
+                                </div>
+                            </div>
+
+                            <div class=" flex-item">
+                                <div class="flex-icon">
+                                    <i class="fas fa-photo-video fa-2x"></i>
+                                </div>
+                                <div class="flex-content">
+                                    <h3>event management</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt exercitationem
+                                        eveniet a
+                                        ducimus quod impedit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 service-img">
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="img/service1.jpg" class="img-fluid" alt="not working">
+                            </div>
+                            <div class="text-normal">Fashion Designing</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="img/service2.jpg" class="img-fluid" alt="not working">
+                            </div>
+                            <div class="text-normal">Music EMD Festival.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="img/service3.jpg" class="img-fluid" alt="not working">
+                            </div>
+                            <div class="text-normal">Photography.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="img/service4.jpg" class="img-fluid" alt="not working">
+                            </div>
+                            <div class="text-normal">Event Management.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Section Gallery -->
+
+    <section id="gallery" class="text-center">
+
+
+        <div id="outfit-category" class="py-5">
+            <h1>Outfit Gallery</h1>
+            <div class="outfit-category">
+
+                <div class="row mb-5 item ">
+                    <div class="col-md-4">
+                        <!-- Item-1 -->
+                        <a href="mens.html#casual" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/casual.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-1">
+                                    <p class="text-primary">Casual Outfit</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Item-2 -->
+                        <a href="mens.html#shoes" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/shoe.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-2">
+                                    <p class="text-primary">Shoes </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- Item-3 -->
+                        <a href="mens.html#street" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/street.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-3">
+                                    <p class="text-primary">Street Outfit</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Second-Row -->
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <!-- Item-4 -->
+                        <a href="mens.html#watch" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/watch.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-4">
+                                    <p class="text-primary">Watches</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Item-5 -->
+                        <a href="mens.html#accessories" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/accessories5.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-5">
+                                    <p class="text-primary">Accessories</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Third Row -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Item-6 -->
+                        <a href="womens.html#party" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/womencasual.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-6">
+                                    <p class="text-primary">Womens Outfit Ideas</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Item-7 -->
+                        <a href="womens.html#party" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/party.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-7">
+                                    <p class="text-primary">Womens Party Wear </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Item-8 -->
+                        <a href="womens.html#ornaments" target="_blank">
+                            <div class="category-item">
+                                <div class="category-item-img">
+                                    <img src="img/ornaments.jpg" class="img-fluid" alt="not working">
+                                </div>
+                                <div class="category-text-8">
+                                    <p class="text-primary">Womens ornaments</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 - About  -->
+    <section id="about" class="">
+        <div class="author row">
+
+            <div class="flex-1 col-sm-6">
+            </div>
+
+            <div class="flex-2 col-sm-6">
+                <h2>Harry | Web Dev</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium tenetur consequatur
+                    tempore reprehenderit nesciunt nemo doloremque animi odio? Incidunt quae deserunt non nostrum
+                    ratione repellendus aspernatur quasi esse, consectetur praesentium at nemo natus, dolores placeat
+                </p>
+                <ul>
+                    <li> <i class="fas fa-check-circle"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, quasi.</li>
+                    <li><i class="fas fa-check-circle"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Sunt nobis pariatur aliquid
+                        perferendis</li>
+                    <li><i class="fas fa-check-circle"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ducimus similique tempore debitis alias
+                        maxime!</li>
+                    <li><i class="fas fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Totam ullam omnis similique.</li>
+                </ul>
+                <div class="icon">
+                    <a href="https://www.facebook.com/hari.sathya.5" target="_blank"><i
+                            class="fab fa-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com/rudhranrudh/" target="_blank"><i
+                            class="fab fa-instagram fa-3x"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section - Footer -->
+    <section id="footer">
+        <footer>
+            <h2>harry | web dev</h2>
+            <p>Copyright &copy <span id="year"></span> All Right Reserved </p>
+            <div class="icon">
+                <a href="https://www.facebook.com/hari.sathya.5" target="_blank"><i
+                        class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://www.instagram.com/rudhranrudh/" target="_blank"><i
+                        class="fab fa-instagram fa-3x instagram"></i></a>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Get the current year for copyright
+        $('#year').text(new Date().getFullYear());
+
+        // Carousel
+        $('.carousel').carousel({
+            interval: 2500,
+        })
+
+
+    </script>
+</body>
+
+</html>
